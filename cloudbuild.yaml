@@ -5,3 +5,5 @@ steps:
     args: ['push', 'asia-southeast1-docker.pkg.dev/PROJECT_ID/my-docker-repo/my-image:$COMMIT_SHA']
 images:
   - 'asia-southeast1-docker.pkg.dev/PROJECT_ID/my-docker-repo/my-image:$COMMIT_SHA'
+
+logging: CLOUD_LOGGING_ONLY
