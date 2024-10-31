@@ -1,10 +1,10 @@
 steps:
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'asia-southeast1-docker.pkg.dev/travel-link-poc/cloudbuildtest/my-image:$COMMIT_SHA', '.']
+    args: ['build', '-t', 'asia-southeast1-docker.pkg.dev/travel-link-poc/testcloudbuild/my-image:$COMMIT_SHA', '.']
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'asia-southeast1-docker.pkg.dev/travel-link-poc/cloudbuildtest/my-image:$COMMIT_SHA']
+    args: ['push', 'asia-southeast1-docker.pkg.dev/travel-link-poc/testcloudbuild/my-image:$COMMIT_SHA']
 images:
-  - 'asia-southeast1-docker.pkg.dev/travel-link-poc/cloudbuildtest/my-image:$COMMIT_SHA'
+  - 'asia-southeast1-docker.pkg.dev/travel-link-poc/testcloudbuild/my-image:$COMMIT_SHA'
 
 options:
   logging: CLOUD_LOGGING_ONLY
